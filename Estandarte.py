@@ -25,7 +25,7 @@ def show_about():
     st.write('---')
 
     with st.container():
-        col3, col4 = st.columns(2)
+        col3 = st.columns(2)
         with col3:
             st.subheader("Education")
             st.write("""
@@ -60,7 +60,7 @@ def show_portfolio():
             st.markdown('[Github Repo](https://github.com/reeyyyxd/CIMP_Backend)')
             
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("", ("Home", "About Me", "Portfolio"))
+page = st.sidebar.radio("Select a page", ("Home", "About Me", "Portfolio"), label_visibility="collapsed")
 
 if page == "Home":
     show_home()
