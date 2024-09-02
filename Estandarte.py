@@ -17,4 +17,4 @@ if st.button("Submit"):
         st.write("Please enter both your name and age.")
 
 # Footer
-st.write("Thank you for using the app!")
+st.write("Thank you for using the app SHEESH!")
