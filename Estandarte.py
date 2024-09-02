@@ -25,19 +25,26 @@ def show_about():
     st.write('---')
 
     with st.container():
-        col3 = st.columns(2)
-        with col3:
-            st.subheader("Education")
-            st.write("""
-            - Cebu Institute of Technology - University
-                - Bachelor of Science in Information Technology (Currently)
-            - Siaton Science High School
-                - Senior High - Science, Technology, Engineering and Mathematics (2020)
-            - Siaton National High School
-                - Junior High (2018)
-            - Felipe Tayko Memorial School
-                - Elementary (2012)       
-            """)
+        st.subheader("Education")
+        st.write("""
+        - Cebu Institute of Technology - University
+            - Bachelor of Science in Information Technology (Currently)
+        - Siaton Science High School
+            - Senior High - Science, Technology, Engineering and Mathematics (2020)
+        - Siaton National High School
+            - Junior High (2018)
+        - Felipe Tayko Memorial School
+            - Elementary (2012)       
+        """)
+    
+    st.write('---')
+    
+    with st.container():
+        st.subheader("Hobby")
+        st.write("""  
+        - Sleeping
+        - Dillydallying   
+        """)    
 
 def show_portfolio():
     st.title("Portfolio")
